@@ -4,7 +4,7 @@ public class ForestMovement : MonoBehaviour
 {
     private Vector2 _beginningPos;
     private float _middlePoint;
-    private float _forestSpeed = 2.1f;
+    [SerializeField] private float _forestSpeed;
 
     private void Start()
     {
