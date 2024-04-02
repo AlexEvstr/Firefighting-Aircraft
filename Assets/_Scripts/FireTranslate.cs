@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class FireTranslate : MonoBehaviour
 {
-    private float _fireSpeed = 3.0f;
+    private float _fireSpeed = 5.0f;
 
     private void FixedUpdate()
     {

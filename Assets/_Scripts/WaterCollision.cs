@@ -10,9 +10,11 @@ public class WaterCollision : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Fire"))
         {
+            CoreData.GemsCount++;
+
             GameObject waterSplash = Instantiate(_waterSplash);
             waterSplash.transform.position = new Vector2(collision.transform.position.x, collision.transform.position.y - collision.gameObject.GetComponent<BoxCollider2D>().size.y);
-            Destroy(waterSplash, 1);
+            Destroy(waterSplash, 0.5f);
 
 
             Destroy(collision.gameObject);
