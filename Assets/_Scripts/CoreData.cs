@@ -22,6 +22,7 @@ public class CoreData : MonoBehaviour
         Time.timeScale = 1;
         GemsCount = 0;
         _heartsIndex = 0;
+        _maxLevel = PlayerPrefs.GetInt("maxLevel", 1);
         CurrentLevel = PlayerPrefs.GetInt("currentLevel", 1);
     }
 
